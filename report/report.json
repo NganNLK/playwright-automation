@@ -1,0 +1,355 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "search-flow;system-should-prevent-customers-from-searching-for-impossible-trip",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "System should prevent customers from searching for impossible trip",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 758554978
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "User go to MarsAir page",
+            "match": {
+              "location": "features/support/steps.js:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1122604304
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "User select \"July\" for departing value",
+            "match": {
+              "location": "features/support/steps.js:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 610329724
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 6,
+            "name": "User select \"December\" for returning value",
+            "match": {
+              "location": "features/support/steps.js:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 621336544
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "User click on \"Search\"",
+            "match": {
+              "location": "features/support/steps.js:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 668349650
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "User should able to see \"Unfortunately, this schedule is not possible. Please try again.\"",
+            "match": {
+              "location": "features/support/steps.js:21"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 24613726
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 681280547
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "search-flow;system-should-inform-user-for-no-more-seats-available",
+        "keyword": "Scenario",
+        "line": 10,
+        "name": "System should inform user for no more seats available",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 225342375
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 11,
+            "name": "User go to MarsAir page",
+            "match": {
+              "location": "features/support/steps.js:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1477698701
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 12,
+            "name": "User select \"December (two years from now)\" for departing value",
+            "match": {
+              "location": "features/support/steps.js:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 596480278
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 13,
+            "name": "User select \"December (two years from now)\" for returning value",
+            "match": {
+              "location": "features/support/steps.js:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 594119626
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 14,
+            "name": "User click on \"Search\"",
+            "match": {
+              "location": "features/support/steps.js:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 695144487
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 15,
+            "name": "User should able to see \"Sorry, there are no more seats available.\"",
+            "match": {
+              "location": "features/support/steps.js:21"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 18779523
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 674134731
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "search-flow;page-should-be-reset-by-default-after-clicking-on-marsair-logo",
+        "keyword": "Scenario",
+        "line": 17,
+        "name": "Page should be reset by default after clicking on MarsAir logo",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 246856597
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 18,
+            "name": "User go to MarsAir page",
+            "match": {
+              "location": "features/support/steps.js:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 877832363
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 19,
+            "name": "User select \"December (two years from now)\" for departing value",
+            "match": {
+              "location": "features/support/steps.js:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 597348167
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 20,
+            "name": "User select \"December (two years from now)\" for returning value",
+            "match": {
+              "location": "features/support/steps.js:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 637317529
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 21,
+            "name": "User click on \"MarsAir\"",
+            "match": {
+              "location": "features/support/steps.js:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 665193760
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 22,
+            "name": "Departing value and returning value should be \"Select\"",
+            "match": {
+              "location": "features/support/steps.js:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 28206333
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 23,
+            "name": "Promotional code is empty",
+            "match": {
+              "location": "features/support/steps.js:29"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3324375
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 625860275
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "search-flow;user's-able-to-enter-a-valid-promotional-code",
+        "keyword": "Scenario",
+        "line": 25,
+        "name": "User's able to enter a valid promotional code",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 243852280
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 26,
+            "name": "User go to MarsAir page",
+            "match": {
+              "location": "features/support/steps.js:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2429273846
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 27,
+            "name": "User enter a valid promotional code",
+            "match": {
+              "location": "features/support/steps.js:33"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 28443503
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 277248904
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "search-flow",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Search flow",
+    "tags": [],
+    "uri": "features/searchFlow.feature"
+  }
+]

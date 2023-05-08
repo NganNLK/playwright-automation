@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+    <testsuite name="search-flow;system-should-prevent-customers-from-searching-for-impossible-trip" tests="5" failures="0" skipped="0">
+        <properties>
+            <property name="URI" value="features/searchFlow.feature">
+            </property>
+        </properties>
+        <testcase name="Given User go to MarsAir page" classname="search-flow;system-should-prevent-customers-from-searching-for-impossible-trip" time="1.122604304">
+        </testcase>
+        <testcase name="When User select &quot;July&quot; for departing value" classname="search-flow;system-should-prevent-customers-from-searching-for-impossible-trip" time="0.610329724">
+        </testcase>
+        <testcase name="And User select &quot;December&quot; for returning value" classname="search-flow;system-should-prevent-customers-from-searching-for-impossible-trip" time="0.621336544">
+        </testcase>
+        <testcase name="And User click on &quot;Search&quot;" classname="search-flow;system-should-prevent-customers-from-searching-for-impossible-trip" time="0.66834965">
+        </testcase>
+        <testcase name="Then User should able to see &quot;Unfortunately, this schedule is not possible. Please try again.&quot;" classname="search-flow;system-should-prevent-customers-from-searching-for-impossible-trip" time="0.024613726">
+        </testcase>
+    </testsuite>
+    <testsuite name="search-flow;system-should-inform-user-for-no-more-seats-available" tests="5" failures="0" skipped="0">
+        <properties>
+            <property name="URI" value="features/searchFlow.feature">
+            </property>
+        </properties>
+        <testcase name="Given User go to MarsAir page" classname="search-flow;system-should-inform-user-for-no-more-seats-available" time="1.477698701">
+        </testcase>
+        <testcase name="When User select &quot;December (two years from now)&quot; for departing value" classname="search-flow;system-should-inform-user-for-no-more-seats-available" time="0.596480278">
+        </testcase>
+        <testcase name="And User select &quot;December (two years from now)&quot; for returning value" classname="search-flow;system-should-inform-user-for-no-more-seats-available" time="0.594119626">
+        </testcase>
+        <testcase name="And User click on &quot;Search&quot;" classname="search-flow;system-should-inform-user-for-no-more-seats-available" time="0.695144487">
+        </testcase>
+        <testcase name="Then User should able to see &quot;Sorry, there are no more seats available.&quot;" classname="search-flow;system-should-inform-user-for-no-more-seats-available" time="0.018779523">
+        </testcase>
+    </testsuite>
+    <testsuite name="search-flow;page-should-be-reset-by-default-after-clicking-on-marsair-logo" tests="6" failures="0" skipped="0">
+        <properties>
+            <property name="URI" value="features/searchFlow.feature">
+            </property>
+        </properties>
+        <testcase name="Given User go to MarsAir page" classname="search-flow;page-should-be-reset-by-default-after-clicking-on-marsair-logo" time="0.877832363">
+        </testcase>
+        <testcase name="When User select &quot;December (two years from now)&quot; for departing value" classname="search-flow;page-should-be-reset-by-default-after-clicking-on-marsair-logo" time="0.597348167">
+        </testcase>
+        <testcase name="And User select &quot;December (two years from now)&quot; for returning value" classname="search-flow;page-should-be-reset-by-default-after-clicking-on-marsair-logo" time="0.637317529">
+        </testcase>
+        <testcase name="And User click on &quot;MarsAir&quot;" classname="search-flow;page-should-be-reset-by-default-after-clicking-on-marsair-logo" time="0.66519376">
+        </testcase>
+        <testcase name="Then Departing value and returning value should be &quot;Select&quot;" classname="search-flow;page-should-be-reset-by-default-after-clicking-on-marsair-logo" time="0.028206333">
+        </testcase>
+        <testcase name="And Promotional code is empty" classname="search-flow;page-should-be-reset-by-default-after-clicking-on-marsair-logo" time="0.003324375">
+        </testcase>
+    </testsuite>
+    <testsuite name="search-flow;user&apos;s-able-to-enter-a-valid-promotional-code" tests="2" failures="0" skipped="0">
+        <properties>
+            <property name="URI" value="features/searchFlow.feature">
+            </property>
+        </properties>
+        <testcase name="Given User go to MarsAir page" classname="search-flow;user&apos;s-able-to-enter-a-valid-promotional-code" time="2.429273846">
+        </testcase>
+        <testcase name="When User enter a valid promotional code" classname="search-flow;user&apos;s-able-to-enter-a-valid-promotional-code" time="0.028443503">
+        </testcase>
+    </testsuite>
+</testsuites>

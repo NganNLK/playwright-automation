@@ -1,0 +1,38 @@
+{
+  "devDependencies": {
+    "@cucumber/cucumber": "^8.0.0-rc.1",
+    "@cucumber/playwright": "^3.1.0",
+    "@playwright/test": "^1.17.1",
+    "@types/node": "^16.11.12",
+    "chai": "^4.3.4",
+    "cucumber-junit": "^1.5.0",
+    "cucumberjs-junitxml": "^1.0.0",
+    "playwright": "^1.17.1",
+    "ts-node": "^10.4.0",
+    "typescript": "^4.5.3"
+  },
+  "keywords": [
+    "cucumber",
+    "playwright",
+    "playwright automation",
+    "e2e",
+    "e2e tests",
+    "integration test",
+    "test automation",
+    "javascript"
+  ],
+  "license": "",
+  "name": "playwright-cucumberjs",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "scripts": {
+    "test": "cucumber-js --parallel 1 -f json:report/report.json && node report.js && cat report/report.json | npx cucumber-junit > report/junitreport.xml"
+  },
+  "version": "1.0.0",
+  "dependencies": {
+    "cucumber": "^7.0.0-rc.0",
+    "cucumber-html-reporter": "^5.5.0"
+  }
+}
