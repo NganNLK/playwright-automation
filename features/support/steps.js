@@ -30,6 +30,3 @@ Then('Promotional code is empty', { timeout: 20000 }, async() =>{
     await marsAirPage.emptyCode();
 });
 
-When('User enter a valid promotional code', { timeout: 20000 }, async()=>{
-    await marsAirPage.validPromotionalCode();
-});

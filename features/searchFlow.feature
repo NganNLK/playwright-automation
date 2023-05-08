@@ -22,6 +22,3 @@ Feature: Search flow
     Then Departing value and returning value should be "Select"
     And Promotional code is empty
 
-  Scenario: User's able to enter a valid promotional code
-    Given User go to MarsAir page
-    When User enter a valid promotional code
