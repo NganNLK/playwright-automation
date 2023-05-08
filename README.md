@@ -16,20 +16,6 @@ Define the scripts in package.json as follows :
 Finally execute the tests with `npm test`
 Run specific feature with `npm test -- marsair.page.js`
 
-### Create a global browser for the test session
-```Javascript
-BeforeAll(async() =>{
-        if (moonHost){
-                global.browser = await chromium.connect({
-                timeout: 0,
-                wsEndpoint: 'ws://'+moonHost+':4444/playwright/chromium'
-            });
-        }
-        else{
-            global.browser = await chromium.launch();
-        }
-});
-```
 ### Create a fresh browser context for each test
 ```Javascript
 Before(async() =>{
@@ -50,8 +36,8 @@ Scenario Outline: Login to the E-Shop Application with Wrong Password
 ```
 ### A sample stepdefinition
 ```Javascript
-When('User logged in eshop using the invalid emailid {string} and the invalid password {string}',async(username,password) =>{
-    await loginpage.login(username,password);
+When('User click on {string}', { timeout: 20000 }, async(string) =>{
+    await marsAirPage.search(string);
 });
 ```
 ### Example of how a Playwright code snippet looks
@@ -62,7 +48,7 @@ const { firefox } = require('playwright');
   const browser = await firefox.launch();
   const context = await browser.newContext();
   const page = await context.newPage();
-  await page.goto('https://www.example.com/');
+  await page.goto('https://marsair.recruiting.thoughtworks.net/NganNguyen');
   await page.screenshot({ path: 'page.png', fullPage: true });
 
   await browser.close();
